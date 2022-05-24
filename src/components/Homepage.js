@@ -15,6 +15,8 @@ const Homepage = () => {
     <div>
       <Header />
       <Routes>
+        <Route path="*" element={<Welcome />} />
+        <Route path="/quotes-blog-react" element={<Welcome />} />
         <Route path="/" exact element={<Welcome />}></Route>
         <Route path="/home" element={<QuotesList />}></Route>
         <Route path="/addquotes" element={<Addquote />} />
