@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 // import { useDispatch } from "react-redux";
 import { useState } from "react";
+import Backbutton from "./Backbutton";
 import { quoteActions } from "../redux/quoteSlice";
 import { useSelector } from "react-redux";
 
@@ -43,10 +44,7 @@ const Addquote = () => {
 
   return (
     <div>
-      <Link style={{ textDecoration: "none", color: "black" }} to="/home">
-        <i className="fi fi-rr-caret-left back"></i>
-      </Link>
-
+      <Backbutton />
       <form onSubmit={submitHandler} className="add-quote-container" action="">
         <input
           className="quote-text"
