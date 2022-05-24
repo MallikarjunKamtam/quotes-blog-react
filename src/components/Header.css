@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+.logo {
+  font-family: "Grape Nuts", cursive;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkslategray;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.link {
+  margin: 20px;
+}
+
+.link:hover {
+  color: white;
+}
+
+p {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.active {
+  background-color: darkolivegreen;
+}

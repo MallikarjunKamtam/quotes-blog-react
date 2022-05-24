@@ -1,0 +1,48 @@
+.quote-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #15133c;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 70%;
+}
+
+.quote-card:hover {
+  box-shadow: 3px 3px 10px white;
+}
+
+.card-while-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-button {
+  border: none;
+  box-shadow: 1px 1px 10px white;
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 20px;
+  float: right;
+  height: 97%;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+
+.author {
+  font-style: italic;
+  font-size: 96%;
+}
+
+.quote-matter {
+  margin-left: 50px;
+}
+
+.actual-quote,
+.author {
+  color: white;
+}
