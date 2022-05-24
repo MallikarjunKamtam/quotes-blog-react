@@ -9,10 +9,17 @@ const Header = () => {
       <div className="header-right">
         <NavLink
           style={{ textDecoration: "none", fontWeight: 900 }}
+          to="/"
+          className={(navData) => (navData.isActive ? "active" : "none")}
+        >
+          <p className="link">Home</p>
+        </NavLink>
+        <NavLink
+          style={{ textDecoration: "none", fontWeight: 900 }}
           to="/home"
           className={(navData) => (navData.isActive ? "active" : "none")}
         >
-          <p className="link"> Home</p>
+          <p className="link">Quotes</p>
         </NavLink>
         <NavLink
           style={{ textDecoration: "none", fontWeight: 900 }}

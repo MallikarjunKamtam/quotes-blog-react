@@ -6,6 +6,7 @@ import Quotedetail from "./Quotedetail";
 import { Routes, Route } from "react-router-dom";
 import QuotesList from "./QuotesList";
 import { useSelector } from "react-redux";
+import Welcome from "./Welcome";
 
 const Homepage = () => {
   const data = useSelector((state) => state.quote);
@@ -14,6 +15,7 @@ const Homepage = () => {
     <div>
       <Header />
       <Routes>
+        <Route path="/" exact element={<Welcome />}></Route>
         <Route path="/home" element={<QuotesList />}></Route>
         <Route path="/addquotes" element={<Addquote />} />
         <Route
