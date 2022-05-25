@@ -9,7 +9,6 @@ import { toast } from "react-toastify";
 import { quoteActions } from "../redux/quoteSlice";
 import { useSelector } from "react-redux";
 
-toast.configure();
 const Addquote = () => {
   const [quoteText, setQuoteText] = useState("");
   const [quoteAuthor, setQuoteAuthor] = useState("");
