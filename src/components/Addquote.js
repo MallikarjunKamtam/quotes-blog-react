@@ -4,9 +4,12 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Backbutton from "./Backbutton";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 import { quoteActions } from "../redux/quoteSlice";
 import { useSelector } from "react-redux";
 
+toast.configure();
 const Addquote = () => {
   const [quoteText, setQuoteText] = useState("");
   const [quoteAuthor, setQuoteAuthor] = useState("");
@@ -34,7 +37,7 @@ const Addquote = () => {
     if (newData.from.length !== 0 && newData.text.length !== 0) {
       dispatch(quoteActions.marker(newData)) && navigate("/home");
     } else {
-      alert("Enter all details");
+      toast.warn("Please Enter all the details");
     }
   };
 
