@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/quotes-blog-react/static/css/main.f92ae875.css",
-    "main.js": "/quotes-blog-react/static/js/main.80eaa21f.js",
+    "main.css": "/quotes-blog-react/static/css/main.dd5f6ebb.css",
+    "main.js": "/quotes-blog-react/static/js/main.9324a29b.js",
     "static/media/cheers.png": "/quotes-blog-react/static/media/cheers.734cf06876ed71969ccc.png",
     "index.html": "/quotes-blog-react/index.html",
-    "main.f92ae875.css.map": "/quotes-blog-react/static/css/main.f92ae875.css.map",
-    "main.80eaa21f.js.map": "/quotes-blog-react/static/js/main.80eaa21f.js.map"
+    "main.dd5f6ebb.css.map": "/quotes-blog-react/static/css/main.dd5f6ebb.css.map",
+    "main.9324a29b.js.map": "/quotes-blog-react/static/js/main.9324a29b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f92ae875.css",
-    "static/js/main.80eaa21f.js"
+    "static/css/main.dd5f6ebb.css",
+    "static/js/main.9324a29b.js"
   ]
 }
