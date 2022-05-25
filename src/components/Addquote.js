@@ -2,8 +2,6 @@ import React from "react";
 import "./Addquote.css";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-// import { useDispatch } from "react-redux";
 import { useState } from "react";
 import Backbutton from "./Backbutton";
 import { quoteActions } from "../redux/quoteSlice";
@@ -12,11 +10,17 @@ import { useSelector } from "react-redux";
 const Addquote = () => {
   const [quoteText, setQuoteText] = useState("");
   const [quoteAuthor, setQuoteAuthor] = useState("");
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const data = useSelector((state) => state.quote);
-  const id = data[data.length - 1].id;
+  const data = useSelector((state) => state.quote.list);
+
+  const newData = {
+    id: Math.round(Math.random() * 100000),
+    text: quoteText,
+    from: quoteAuthor,
+  };
 
   const quoteTextHandler = (e) => {
     setQuoteText(e.target.value);
@@ -25,17 +29,9 @@ const Addquote = () => {
     setQuoteAuthor(e.target.value);
   };
 
-  const newData = {
-    id: id + 1,
-    quote: quoteText,
-    author: quoteAuthor,
-  };
-
-  // console.log(newData);
-
   const submitHandler = (e) => {
     e.preventDefault();
-    if (newData.author.length !== 0 && newData.quote.length !== 0) {
+    if (newData.from.length !== 0 && newData.text.length !== 0) {
       dispatch(quoteActions.marker(newData)) && navigate("/home");
     } else {
       alert("Enter all details");

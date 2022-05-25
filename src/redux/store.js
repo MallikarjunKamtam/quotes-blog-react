@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import quoteSlice from "./quoteSlice";
+import quoteReducer from "./quoteSlice";
 
 const store = configureStore({
   reducer: {
-    quote: quoteSlice.reducer,
+    quote: quoteReducer,
   },
 });
 

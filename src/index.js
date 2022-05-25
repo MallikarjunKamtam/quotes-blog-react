@@ -14,3 +14,5 @@ root.render(
     </Router>
   </Provider>
 );
+
+// https://gist.githubusercontent.com/b1nary/ea8fff806095bcedacce/raw/6e6de20d7514b93dd69b149289264997b49459dd/enterpreneur-quotes.json
